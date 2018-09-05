@@ -6,11 +6,11 @@ Angular Universal carousel
 
 ## changelog [![NPM version](https://badge.fury.io/js/ngu-carousel.png)](http://badge.fury.io/js/ngu-carousel)
 
-for ChangeLog go to [releases](https://github.com/sheikalthaf/ngu-carousel/releases)
+for ChangeLog go to [CHANGELOG.md](https://github.com/sheikalthaf/ngu-carousel/blob/master/CHANGELOG.md)
 
 ## Demo
 
-SSR Demo available [Here](https://ngu-carousel.firebaseapp.com)
+Demo available [Here](https://sheikalthaf.github.io/ngu-carousel)
 
 ## Installation
 
@@ -31,7 +31,7 @@ Now ngu-carousel supports touch with the help of hammerjs
 
 `npm install hammerjs --save`
 
-Import hammerjs in `main.ts` file
+Import hammerjs in `polyfills.ts` file
 
 ```javascript
 import 'hammerjs';
@@ -214,10 +214,10 @@ This is HTML I'm using in the carousel. Add your own css according to this eleme
 </ngu-carousel>
 ```
 
-- `inputs` is an `Input` and It accepts `NguCarousel`.
-- `initData` is an `Output` which triggered on carousel init and it emits token to exchange with service to contol the carousel.
-- `onMove` is an `Output` which triggered on every slide before start and it will emit `$event` as `NguCarouselStore` object.
-- `carouselLoad` is an `Output` which triggered when slide reaches the end on items based on inputs `load`.
+* `inputs` is an `Input` and It accepts `NguCarousel`.
+* `initData` is an `Output` which triggered on carousel init and it emits token to exchange with service to contol the carousel.
+* `onMove` is an `Output` which triggered on every slide before start and it will emit `$event` as `NguCarouselStore` object.
+* `carouselLoad` is an `Output` which triggered when slide reaches the end on items based on inputs `load`.
 
 ## Carousel Service
 
@@ -227,8 +227,8 @@ import { NguCarouselService } from '@ngu/carousel';
 
 This carousel Service supports:
 
-- `reset(token)` - This function will reset the carousel
-- `moveToSlide(token, index, animate)` - This function is used to move to index with animation control.
+* `reset(token)` - This function will reset the carousel
+* `moveToSlide(token, index, animate)` - This function is used to move to index with animation control.
 
 # Getstarted guide
 
